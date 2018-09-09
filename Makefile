@@ -6,6 +6,10 @@ build:
 install:
 	go install
 
+.PHONY: test
+test:
+	go test
+
 .PHONY: release
 release:
 	GOOS=darwin GOARCH=amd64 go build -o iq-darwin-amd64 .
