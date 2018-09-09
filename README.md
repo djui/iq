@@ -10,8 +10,8 @@ INI file query tool.
 
 ## Usage
 
-    $ echo "[section]\nkey = value\n" | jq section.key -
+    $ echo "[section]\nkey = value\n" | iq section.key -
     value
 
-    $ jq section.key file.ini
+    $ iq section.key file.ini
     value
